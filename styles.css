@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color:rgb(39, 54, 49); /* Темно-зеленый цвет */
+    color: #fff; /* Белый цвет текста */
+    padding: 10px 20px 1px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Закрепляет шапку */
+    width: calc(100% - 40px); /* Уменьшаем ширину шапки на 40px (20px справа и 20px слева) */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Устанавливает шапку выше остального контента */
+}
+h1{
+  color: white;
+}
+.logo img {
+    max-height: 50px;
+}
+
+.title img {
+    max-height: 100px; /* Предположим, что это размер логотипа */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff; /* Белый цвет ссылок */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+}
+
+nav ul li a:hover {
+    opacity: 0.7; /* Более прозрачный при наведении */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Отступ сверху 100px для шапки */
+    background-image: url(leaves.png);
+    background-repeat: no-repeat;
+  background-position: center center;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+  
+}
+.contentd{
+    border: 4px solid #000; /* Черная рамка */
+    padding: 160px 600px 160px 600px; /* Отступы внутри контейнера */
+}
+
+
+.text-container {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.btn {
+    background-color: #4a5c3ae8;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху */
+    transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+}
+
+.btn:hover {
+    opacity: 0.7; /* Более прозрачный при наведении */
+}
+
+.containert {
+  display: flex;
+  justify-content: space-between; /* Размещаем элементы по краям контейнера */
+  background-color: rgb(39, 54, 49); /* Зеленый фон */
+  padding: 10px; /* Добавляем padding */
+}
+
+.about, .vision {
+  flex: 1;
+  margin: 0 10px; /* Добавляем небольшие отступы между элементами */
+}
+
+.about h2, .vision h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about p, .vision p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.conteiner {
+  display: flex;
+   color: #fff; /* Белый цвет текста */
+  justify-content: space-between; /* Размещаем элементы по краям контейнера */
+  background-color:  rgb(39, 54, 49); /* Зеленый фон */
+  padding: 100px 200px 100px 200px; /* Добавляем padding */
+}
+
+.about, .vision {
+  flex: 1;
+  margin: 0 150px; /* Добавляем небольшие отступы между элементами */
+}
+
+.about h2, .vision h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about p, .vision p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+.bodee {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.containerer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 30px;
+}
+
+.column img {
+  max-width: 150%;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.separator {
+  width: 2px;
+  background-color: rgba(128, 128, 128, 0.5); /* серый цвет с полупрозрачностью */
+  margin: 0 200px; /* Регулируйте отступы по вашему усмотрению */
+}
+
+.animated-text {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  h4 {
+    font-size: 24px;
+    color: #ffffff; /* Цвет текста */
+    position: relative;
+    animation: glowing 1.5s infinite alternate; /* Анимация */
+    z-index: 1; /* Помещаем текст поверх псевдоэлемента */
+  }
+  
+  .animated-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fire.png'); /* Путь к вашему изображению */
+    background-size: cover;
+    filter: blur(10px); /* Размытие для снижения контрастности */
+    z-index: 0; /* Помещаем псевдоэлемент за текстом */
+  
+  }
+  
+  @keyframes glowing {
+    
+    100% {
+      text-shadow: 0 0 20px #fff, 0 0 30px  #95a160, 0 0 40px #95a160, 0 0 70px  #95a160, 0 0 80px #95a160, 0 0 100px  #95a160, 0 0 150px  #95a160, 0 0 200px  #95a160;
+    }
+  }
+
+
+
+
+.testimonial {
+    background-color: rgb(131, 184, 162);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.author {
+    margin-top: 20px;
+    font-style: italic;
+}
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(131, 184, 162);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgba(131, 184, 162, 0.562);
+}
+.bod {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+    background-image: url('closing.jpg');
+    background-size: cover;
+   
+    z-index: 0; /* Помещаем псевдоэлемент за текстом */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+
+.obsh{
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: rgb(39, 54, 49);
+    padding: 40px 70px 50px 40px;
+   
+}
+.get{
+    display: block;
+    color: #ffffff; /* Цвет текста */
+    text-align: center;
+    
+
+}
+
+.cont-container {
+    max-width: 1600px;
+    margin: 50px auto;
+    display: flex;
+    color: #ffffff;
+ 
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-details p {
+    margin: 5px 0;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #555555;
+    color: #ffffff;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa500;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .additional-info {
+    margin-top: 40px;
+  }
+  
+  .additional-info p {
+    font-size: 14px;
+  }
+  
+
+  .bady {
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: rgb(39, 54, 49); /* Цвет фона страницы */
+    color: #ffffff; /* Цвет текста */
+}
+
+.footer-container {
+    background-color: rgb(39, 54, 49); /* Цвет фона нижней части страницы */
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    margin-left: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Размер иконок */
+    height: 40px;
+    border-radius: 50%; /* Закругление углов для создания круглых иконок */
+}
+
+  
