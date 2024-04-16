@@ -9,7 +9,7 @@ body {
 header {
     background-color:rgb(39, 54, 49); /* Темно-зеленый цвет */
     color: #fff; /* Белый цвет текста */
-    padding: 10px 20px 1px 20px;
+    padding: 0px 20px 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ h1{
   color: white;
 }
 .logo img {
-    max-height: 50px;
+    max-height: 100px;
 }
 
 .title img {
